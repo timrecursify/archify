@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, fedci]
     steps:
       - uses: actions/checkout@v5
       - name: Fetch exact tag object

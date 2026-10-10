@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, fedci]
     steps:
       - uses: actions/checkout@v5
       # Upstream PR #6: Node 24 migration, before v1.0.6's chart-rendering changes.
